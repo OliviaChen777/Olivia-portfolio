@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Olivia's portfolio</title>
+    <!--homelink style -->
+    <h2 class="homelink">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+      </h2>
+      <style>
+        .homelink{
+          position: fixed; /* 固定位置 */
+          right: 60px; /* 距离右侧20像素 */
+          bottom: 60px; /* 距离底部20像素 */
+          display: flex; /* 使用Flexbox布局 */
+          flex-direction: column; /* 竖着排列 */
+          align-items: flex-start; /* 左对齐 */
+        }
+    
+        a {
+          text-decoration: none; /* 去掉链接下划线 */
+          color:darkred;  /* 设置文字颜色 */
+          font-size: 40px; /* 设置链接的字体大小为20px */
+    
+          margin-bottom: 20px; /* 设置每个链接之间的间距 */
+        }
+       
+  
+  a:hover {
+    color:orange;           /* 鼠标悬停时，链接变为红色 */
+    text-decoration: underline; /* 鼠标悬停时加下划线 */
+  }
+  
+  a:active {
+    color:chocolate;       /* 点击时，链接变为橙色 */
+  }
+      </style>
+    <!--home page setting the text float on photo-->
+    <style>
+        .image-container {
+          position: relative; /* 设置父容器为相对定位 */
+          width: 1400px;
+          height: 1000px;
+        }
+    
+        .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* 让图片充满容器并保持比例 */
+        }
+    
+        .homepage {
+          position: absolute; /* 绝对定位文字 */
+          top: 30%; /* 垂直居中 */
+          left: 50%; /* 水平居中 */
+          /* transform: translate(-50%, -50%); 精确居中 */
+          color: white; /* 文字颜色 */
+          font-size: 200px; /* 字体大小 */
+          font-weight: bold; /* 字体加粗 */
+         
+          padding: 10px; /* 给文字加一些内边距 */
+        }
+      </style>
+</head>
+
+    <body>
+        <script src="javascript.js"></script>
+        <div class="image-container">
+            <img src="jpg/olivia.JPG" alt="my photo">
+            <div class="homepage">OliviaChen</div>
+          </div>
+
+<!-- <h2> <a href="index.html">home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a></h2></div></header>
+
+<p class = "intro">
+    I was once a high school teacher with a Master's degree in Education. Now, I am fully immersed in boot camp studies, actively exploring the tech industry. I am passionate about technology and dedicated to learning and mastering new skills, eager to embark on a new career in the tech field. </p>
+<img src="jpg/olivia.JPG" alt="olivia's photo" style="height: 1000px; width: 1600px; border: 30px"> -->
+
+</body>
+</html> 
