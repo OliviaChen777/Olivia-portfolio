@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer ></script>
     
     <title>Olivia's portfolio</title>
     <!--homelink style -->
-    <h2 class="homelink">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-      </h2>
+    
+      
       <style>
         .homelink{
-          position: fixed; /* 固定位置 */
-          right: 60px; /* 距离右侧20像素 */
-          bottom: 60px; /* 距离底部20像素 */
+          position: absolute; /* 固定位置 */
+          right: 1%; /* 距离右侧20像素 */
+          bottom: 20%; /* 距离底部20像素 */
           display: flex; /* 使用Flexbox布局 */
           flex-direction: column; /* 竖着排列 */
           align-items: flex-start; /* 左对齐 */
@@ -26,7 +24,7 @@
         a {
           text-decoration: none; /* 去掉链接下划线 */
           color:darkred;  /* 设置文字颜色 */
-          font-size: 40px; /* 设置链接的字体大小为20px */
+          font-size: 45px; /* 设置链接的字体大小为20px */
     
           margin-bottom: 20px; /* 设置每个链接之间的间距 */
         }
@@ -45,32 +43,51 @@
     <style>
         .image-container {
           position: relative; /* 设置父容器为相对定位 */
-          width: 1400px;
-          height: 1000px;
+          width: 90%;
+          height: 80%;
         }
     
         .image-container img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; /* 让图片充满容器并保持比例 */
+          width: 90%;
+          height: 90%;
+          object-fit:cover; /* 让图片充满容器并保持比例 */
         }
     
         .homepage {
           position: absolute; /* 绝对定位文字 */
-          top: 30%; /* 垂直居中 */
+          bottom: 50%; /* 垂直居中 */
           left: 50%; /* 水平居中 */
-          /* transform: translate(-50%, -50%); 精确居中 */
+          /* transform: translate(-50%, -50%); */
           color: white; /* 文字颜色 */
-          font-size: 200px; /* 字体大小 */
+          font-size: 10vw; /* 字体大小 */
           font-weight: bold; /* 字体加粗 */
          
           padding: 10px; /* 给文字加一些内边距 */
+          z-index: 2;
         }
+        @media screen and (min-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+  }
+
       </style>
 </head>
 
     <body>
-        <script src="javascript.js"></script>
+      <h2 class="homelink">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact Me</a>
+      </h2>
         <div class="image-container">
             <img src="jpg/olivia.JPG" alt="my photo">
             <div class="homepage">OliviaChen</div>
